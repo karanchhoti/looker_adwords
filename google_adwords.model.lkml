@@ -4,7 +4,7 @@ connection: "bigquery-connectors-adwords"
 include: "*.view"
 
 # include all the explores
-include: "*.explore"
+#include: "*.explore"
 
 # include all the dashboards
 include: "*.dashboard"
