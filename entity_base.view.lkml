@@ -144,7 +144,7 @@ view: base {
 
 view: ad {
   extends: [entity_base]
-  sql_table_name: adwords_v201609.Ad_6747157124 ;;
+  sql_table_name: looker_scratch.Ad_6761079665 ;;
 
   dimension: _data {
     sql: TIMESTAMP(${TABLE}._DATA_DATE) ;;
@@ -384,7 +384,7 @@ view: ad {
 
 view: ad_group {
   extends: [entity_base]
-  sql_table_name: adwords_v201609.AdGroup_6747157124 ;;
+  sql_table_name: looker_scratch.AdGroup_6761079665 ;;
 
   dimension: _data {
     sql: TIMESTAMP(${TABLE}._DATA_DATE) ;;
@@ -566,7 +566,7 @@ view: ad_group {
 
 view: audience {
   extends: [entity_base]
-  sql_table_name: adwords_v201609.Audience_6747157124 ;;
+  sql_table_name: looker_scratch.Audience_6761079665 ;;
 
   dimension: _data {
     sql: TIMESTAMP(${TABLE}._DATA_DATE) ;;
@@ -714,7 +714,7 @@ view: audience {
 
 view: customer {
   extends: [entity_base]
-  sql_table_name: adwords_v201609.Customer_6747157124 ;;
+  sql_table_name: looker_scratch.Customer_6761079665 ;;
 
   dimension: _data {
     sql: TIMESTAMP(${TABLE}._DATA_DATE) ;;
@@ -789,7 +789,7 @@ view: customer {
 
 view: campaign {
   extends: [entity_base]
-  sql_table_name: adwords_v201609.Campaign_6747157124 ;;
+  sql_table_name: looker_scratch.Campaign_6761079665 ;;
 
   dimension: _data {
     sql: TIMESTAMP(${TABLE}._DATA_DATE) ;;
@@ -990,7 +990,7 @@ view: campaign {
 
 view: keyword {
   extends: [ad_criterion_base, entity_base]
-  sql_table_name: adwords_v201609.Keyword_6747157124 ;;
+  sql_table_name: looker_scratch.Keyword_6761079665 ;;
 
   dimension: _data {
     sql: TIMESTAMP(${TABLE}._DATA_DATE) ;;

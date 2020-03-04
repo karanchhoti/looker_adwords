@@ -139,28 +139,28 @@ view: master_stats {
 
   sql_table_name:
   {% if (ad._in_query or master_stats.creative_id._in_query) %}
-    adwords_v201609.AdBasicStats_6747157124
+    looker_scratch.AdBasicStats_6761079665
   {% elsif (audience._in_query or master_stats.audience_criterion_id._in_query) %}
-    adwords_v201609.AudienceBasicStats_6747157124
+    looker_scratch.AudienceBasicStats_6761079665
   {% elsif (keyword._in_query or master_stats.criteria_id._in_query) %}
-    adwords_v201609.KeywordBasicStats_6747157124
+    looker_scratch.KeywordBasicStats_6761079665
   {% elsif (ad_group._in_query or master_stats.ad_group_id._in_query) %}
     {% if master_stats.hour_of_day._in_query %}
-      adwords_v201609.HourlyAdGroupStats_6747157124
+      looker_scratch.HourlyAdGroupStats_6761079665
     {% else %}
-      adwords_v201609.AdGroupBasicStats_6747157124
+      looker_scratch.AdGroupBasicStats_6761079665
     {% endif %}
   {% elsif (campaign._in_query or master_stats.campaign_id._in_query) %}
     {% if master_stats.hour_of_day._in_query %}
-      adwords_v201609.HourlyCampaignStats_6747157124
+      looker_scratch.HourlyCampaignStats_6761079665
     {% else %}
-      adwords_v201609.CampaignBasicStats_6747157124
+      looker_scratch.CampaignBasicStats_6761079665
     {% endif %}
   {% else %}
     {% if master_stats.hour_of_day._in_query %}
-      adwords_v201609.HourlyAccountStats_6747157124
+      looker_scratch.HourlyAccountStats_6761079665
     {% else %}
-      adwords_v201609.AccountBasicStats_6747157124
+      looker_scratch.AccountBasicStats_6761079665
     {% endif %}
   {% endif %} ;;
 
