@@ -5,7 +5,7 @@ view: base_quarter_stats {
     type: time
     timeframes: ["quarter", "raw"]
     convert_tz: no
-    sql: CAST(CONCAT(${TABLE}._data_quarter, '-01') AS TIMESTAMP) ;;
+    sql: CAST(CONCAT(${TABLE}._data_quarter) AS TIMESTAMP) ;;
   }
   dimension: clicks {
     type: number
@@ -223,7 +223,7 @@ view: campaign_budget_stats {
   }
   dimension: percent_remaining_budget {
     type: number
-    sql: ${remaining_budget} / ${amount_usd} ;;
+    sql: case when ${amount_usd}=0 then 0 else ${remaining_budget} / ${amount_usd} end ;;
     value_format_name: percent_2
   }
   dimension: percent_used_budget {
