@@ -232,3 +232,4 @@ explore: campaign_budget_stats {
     relationship: many_to_one
   }
 }
+explore: google_play_installs {}
