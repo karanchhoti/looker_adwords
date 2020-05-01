@@ -233,3 +233,4 @@ explore: campaign_budget_stats {
   }
 }
 explore: google_play_installs {}
+explore: android_installs_and_app_crashes {}
